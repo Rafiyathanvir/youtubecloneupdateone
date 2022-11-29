@@ -1,0 +1,282 @@
+*{
+    margin:0 ;
+    padding:0 ;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+*:focus{
+    outline:none;
+}
+body{
+    position: relative;
+    background: #ece9e9;
+    font-family: 'roboto',sans-serif;
+}
+.navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background:rgb(164, 45, 45);
+    display:flex;
+    align-items:center;
+    padding:0 2.5vw;
+}
+.toggle-btn{
+    width:19px;
+    height: 10px;
+    position:relative;
+    cursor:pointer;
+    margin-right:70px;
+}
+.toggle-btn span{
+    position: absolute;
+    width:100%;
+    height:2px;
+    top:50%;
+    transform:translateY(-50%);
+    background: rgb(8, 6, 6);
+
+}
+.toggle-btn span:nth-child(1){
+    top:0;
+}
+.toggle-btn span:nth-child(3){
+    top:100%;
+}
+.logo{position: relative;
+    height:30px;
+    margin-right:350%;
+    right: 70px;
+  
+    }
+    
+      .search-box{
+        position: relative;
+        max-width:500px;
+        width:20%;
+        height:30px;
+        margin-right: 55%;
+        display: flex;
+        right: 70px;
+      }
+      
+    .search-bar{
+
+        width:85%;
+        height:100%;
+        border:2px solid rgb(249, 247, 247);
+        padding:0 20px;
+        font-size:16px;
+        text-transform:capitalize;
+
+
+    }
+    .search-btn{
+        width: 17%;
+        height:100%;
+        background: rgb(237, 234, 234);
+        border:2px solid rgb(59, 59, 59);
+        padding:5px 0;
+        border-left:none;
+    }
+  .icons{
+    margin-left: 500%;
+    padding-left: 60%;
+    height: 20px;
+    width:40px
+  }
+  .user-option{
+    position:relative;
+    height:35px;
+    display:flex;
+    right:50px;
+    align-items:center;
+  }
+
+  .user-option.icons{
+    position: relative;
+    height:80%;
+    right:100px;
+    cursor:pointer;
+    left:40px;
+;
+
+  }
+  .user-dp{
+    cursor:pointer;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    overflow:hidden;
+
+  }
+
+  .user-dp img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+
+  /* side bar*/
+  .side-bar{
+    position:fixed;
+    top:41px;
+    left:0;
+    min-width:250px;
+    width:250px;
+    height:100%;
+    background:rgb(146, 39, 39);
+    padding-right:10px;
+  }
+.links{
+    margin-top: 25px;
+    display:block;
+    width:100%;
+    padding:10px 20px;
+    display: flex;
+    align-items:center;
+    text-transform:capitalize;
+    color:black;
+    font-size:14px;
+    font-weight:500;
+    text-decoration:none;
+}
+
+.links img{
+    height: 25px;
+    margin-right: 20px;
+}
+
+.links:hover,links.active{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.seperator{
+    border:none;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    margin:20px 0;
+}
+.filters{
+    position: fixed;
+    left:250px;
+    top:60px;
+    background: #fff;
+    width:calc(100% - 250px);
+    height: 60px;
+    border-top:1px solid #dbdbdb;
+    padding:0 20px;
+    display: flex;
+    align-items:center;
+    overflow-x: auto;
+
+
+}
+
+.filter-option{
+    flex:0 0 auto;
+    padding:10px 20px;
+    border-radius:50px;
+    background:#f0f0f0;
+    border:1px solid #dbdbdb;
+    margin-right:10px;
+    color:black;
+    font-size:15px;
+    cursor: pointer;
+
+}
+
+.filter-option.active{
+    color:#fff;
+    background:black ;
+}
+
+
+
+
+.channel-icon{
+    width: 10px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    
+  }
+
+
+  .video-container{
+    width: calc(100% - 270px);
+    margin-top: 125px;
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 20px 5px;
+    overflow-x: visible;
+  }
+  
+  .video{
+    min-height: 280px;
+    height: auto;
+  }
+  
+  .thumbnail{
+    width: 90%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+   
+  }
+  
+  .content{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    
+  }
+  
+  .channel-icon{
+    width: 90px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    
+  }
+  
+  .title{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+  }
+  
+  .channel-name{
+    font-size: 14px;
+    margin: 2px 0;
+    color: #230505;
+    padding-right: 85px;
+   
+  }
+  .tit{
+    padding-top: 12px;
+  }
+  .channel-icon1{
+   margin-top: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
